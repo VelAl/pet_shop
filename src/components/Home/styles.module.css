@@ -1,0 +1,16 @@
+
+.wrapper {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.textHolder{
+    max-width: 720px;
+    width: 100%;
+}
+
+p {
+    text-indent: 20px; 
+}

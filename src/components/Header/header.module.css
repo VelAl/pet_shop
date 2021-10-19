@@ -1,0 +1,25 @@
+.wrapper{
+    height: 90px;
+    background-color: rgb(34, 53, 82);
+    display: flex;
+    align-items: center;
+}
+
+.nawlink {
+    color: white;
+    text-decoration: none;
+    padding:0 25px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.pickedlink{
+    background-color: rgb(25, 16, 65);
+    height: 100%;
+}
+
+.grow{
+    flex-grow: 1;
+}
+

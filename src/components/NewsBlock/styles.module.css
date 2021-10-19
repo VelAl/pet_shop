@@ -1,0 +1,64 @@
+.news_wrapper{
+    position: relative;
+    cursor: pointer;
+}
+.news{
+    color:white;
+    font-weight: bolder;
+    margin-right: 35px;
+}
+.news_amount{
+    position: absolute;
+    top: -13px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.newsTape{
+    background-color: rgb(168, 223, 245);
+    max-width: 440px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: 55px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(197, 195, 195) 0px 7px 29px 0px;
+}
+
+.newsTapeHeader{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.onePetReturned{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.petName{
+    cursor: pointer;
+    margin-left: 15px;
+}
+.petName:hover{
+    color: blue;
+}

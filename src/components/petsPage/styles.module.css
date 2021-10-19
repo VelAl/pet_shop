@@ -1,0 +1,39 @@
+
+.wrapper{
+    background-color: rgb(93, 200, 233);
+    padding: 25px;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: calc(100vh - 90px);
+}
+
+.selectionsHolder{
+    background-color: rgb(54, 193, 235);
+    border: 1px solid rgb(7, 7, 139);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexItem{
+    flex: 1;
+    margin-left: 15px;
+}
+
+.startFilteringBtn{
+    color: blue;
+    font-size: large;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startFilteringBtn :hover{
+    font-size: xx-large;
+}
