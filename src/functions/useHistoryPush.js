@@ -1,11 +1,9 @@
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
 
+export const useHistoryPush = (history_path) => {
+  const history = useHistory();
 
-
-export const useHistoryPush =(history_path)=> {
-    const history = useHistory()
-    
-    return  ()=> {
-        history.push(history_path)
-    }
-}
+  return () => {
+    history.push(history_path);
+  };
+};

@@ -1,18 +1,19 @@
-import styles from './styles.module.css'
-import { useQuery } from '@apollo/client';
-import { GET_AMOUNTS } from '../../client/queries';
+import { useQuery } from "@apollo/client";
+import styles from "./styles.module.css";
+import { GET_AMOUNTS } from "../../client/queries";
 
+export const Counter = () => {
+  const { loading, error, data } = useQuery(GET_AMOUNTS);
 
-export const Counter =()=> {
-    const { loading, error, data } = useQuery(GET_AMOUNTS);
-
-    if(loading) return(<div>loading...</div>)
-    if(error) return(<div>{error.message}</div>)
-    return (
-        <div className={styles.wrapper}>
-            <div>total amount of pets: {data.totalPets}</div>
-            <div>available pets {data.availablePets}</div>
-            <div>checked out pets : {data.checkedOutPets}</div>
-        </div>
-    )
-}
+  return loading ? (
+    <div>loading...</div>
+  ) : error ? (
+    <div>{error.message}</div>
+  ) : (
+    <div className={styles.wrapper}>
+      <div>Total amount of pets: {data.totalPets}</div>
+      <div>Available pets: {data.availablePets}</div>
+      <div>Checked out pets: {data.checkedOutPets}</div>
+    </div>
+  );
+};

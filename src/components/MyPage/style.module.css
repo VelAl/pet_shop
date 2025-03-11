@@ -1,52 +1,50 @@
-
-.wrapper{
-    background-color: rgb(123, 239, 243);
-    padding: 25px;
-    box-sizing: border-box;
-    max-width: 960px;
-    margin: 0 auto;
-    min-height: calc(100vh - 90px);
+.wrapper {
+  background-color: rgb(123, 239, 243);
+  padding: 25px;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: calc(100vh - 90px);
 }
 
-.logOutDiv{
-    display: flex;
-    justify-content: flex-end;
+.logOutDiv {
+  display: flex;
+  justify-content: flex-end;
 }
-.logOutBtn{
-    box-sizing: border-box;
-    width: 100px;
-    height: 25px;
-    color: blue;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logOutBtn {
+  box-sizing: border-box;
+  width: 100px;
+  height: 25px;
+  color: blue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logOutBtn:hover{
-    color: rgb(2, 2, 179);
-    font-weight: bold;
+.logOutBtn:hover {
+  color: rgb(2, 2, 179);
+  font-weight: bold;
 }
-.logOutIcon{
-    margin-left: 10px;
+.logOutIcon {
+  margin-left: 10px;
 }
 
-.btnHolder{
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 25px;
+.btnHolder {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 25px;
 }
-.grow{
-    flex-grow: 1;
+.grow {
+  flex-grow: 1;
 }
 
 .wrapper button {
-    padding: 10px;
-    margin-top: 15px;
-    background-color: rgb(101, 101, 248);
-    border: none;
-    color: white;
-    border-radius: 4px;
-    font-weight:bold;
-    margin-right: 25px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(101, 101, 248);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 25px;
 }
-

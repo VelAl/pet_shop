@@ -1,52 +1,52 @@
-
-.wrapper{
-    background-color: rgb(196, 236, 248);
-    margin-top: 5px;
-    height: 140px;
-    padding: 15px;
-    border: 1px solid black;
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
+.wrapper {
+  background-color: rgb(196, 236, 248);
+  margin-top: 10px;
+  height: 140px;
+  padding: 15px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: -5px 6px 12px 4px rgba(35, 113, 209, 0.74);
 }
 
-.info{
-    width: 100%;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
+.info {
+  width: 100%;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.petname{
-    border-bottom: 1px solid #000;
+.petname {
+  border-bottom: 1px solid #000;
 }
 
-.grow{
-    flex-grow: 1;
+.grow {
+  flex-grow: 1;
 }
 
 .type {
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
 .wrapper img {
-    max-width: 90px;
-    border-radius: 10px;
-    margin-right: 20px;
+  max-width: 90px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
-.dilateBtn{
-    padding: 8px;
-    box-sizing: border-box;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dilateBtn {
+  padding: 8px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .dilateBtn:hover {
-    font-size: x-large;
+  font-size: x-large;
 }

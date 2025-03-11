@@ -1,16 +1,14 @@
-
 .wrapper {
-    
-    display: flex;
-    justify-content: center;
-    padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
 }
 
-.textHolder{
-    max-width: 720px;
-    width: 100%;
+.textHolder {
+  max-width: 720px;
+  width: 100%;
 }
 
 p {
-    text-indent: 20px; 
+  text-indent: 20px;
 }

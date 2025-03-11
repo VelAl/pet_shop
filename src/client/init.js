@@ -1,46 +1,40 @@
-import { WebSocketLink } from '@apollo/client/link/ws';
-import { getMainDefinition } from '@apollo/client/utilities';
-import {
-  ApolloClient,
-  InMemoryCache,
-  split,
-  HttpLink
-} from "@apollo/client";
-
-import { setContext } from '@apollo/client/link/context';
+import { ApolloClient, InMemoryCache, split, HttpLink } from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { WebSocketLink } from "@apollo/client/link/ws";
+import { getMainDefinition } from "@apollo/client/utilities";
 
 const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem('petStoreToken');
-  
+  const token = localStorage.getItem("petStoreToken");
+
   return {
     headers: {
       ...headers,
       authorization: token ? `Bearer ${token}` : "",
-    }
-  }
+    },
+  };
 });
 
 const httpLink = new HttpLink({
-  uri: 'https://funded-pet-library.moonhighway.com/',
+  uri: "https://funded-pet-library.moonhighway.com/",
 });
 
 const wsLink = new WebSocketLink({
-  uri: 'wss://funded-pet-library.moonhighway.com/graphql',
+  uri: "wss://funded-pet-library.moonhighway.com/graphql",
   options: {
     reconnect: true,
-  }
+  },
 });
 
 const splitLink = split(
   ({ query }) => {
     const definition = getMainDefinition(query);
     return (
-      definition.kind === 'OperationDefinition' &&
-      definition.operation === 'subscription'
+      definition.kind === "OperationDefinition" &&
+      definition.operation === "subscription"
     );
   },
   wsLink,
-  httpLink,
+  httpLink
 );
 
 export const client = new ApolloClient({
@@ -50,46 +44,45 @@ export const client = new ApolloClient({
       Customer: {
         merge(existing, incoming) {
           return { ...existing, ...incoming };
-        }
+        },
       },
 
-      'Cat': {
+      Cat: {
         fields: {
-          photo:{
+          photo: {
             merge(existing, incoming) {
               return { ...existing, ...incoming };
-            }
-          }
-        }
+            },
+          },
+        },
       },
       Dog: {
         fields: {
-          photo:{
+          photo: {
             merge(existing, incoming) {
               return { ...existing, ...incoming };
-            }
-          }
-        }
+            },
+          },
+        },
       },
       Stingray: {
         fields: {
-          photo:{
+          photo: {
             merge(existing, incoming) {
               return { ...existing, ...incoming };
-            }
-          }
-        }
+            },
+          },
+        },
       },
       Rabbit: {
         fields: {
-          photo:{
+          photo: {
             merge(existing, incoming) {
               return { ...existing, ...incoming };
-            }
-          }
-        }
+            },
+          },
+        },
       },
-    }
+    },
   }),
-})
-
+});

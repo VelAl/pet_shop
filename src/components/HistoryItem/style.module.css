@@ -1,25 +1,23 @@
-
-
-.wrapper{
-    border-top: 1px solid #000;
-    margin-top: 25px;
-    padding: 5px;
-    display: flex;
+.wrapper {
+  border-top: 1px solid #000;
+  margin-top: 25px;
+  padding: 5px;
+  display: flex;
 }
 
-.grow{
-    flex-grow: 1;
+.grow {
+  flex-grow: 1;
 }
 
-.date{
-    margin-right: 25px;
+.date {
+  margin-right: 25px;
 }
 
-.petLink{
-    cursor: pointer;
-    margin-right: 5px;
-    font-weight: bold;
+.petLink {
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
 }
 .petLink:hover {
-    color: blue;
+  color: blue;
 }

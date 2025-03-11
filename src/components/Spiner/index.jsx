@@ -1,9 +1,8 @@
-import styles from './styles.module.css'
-import { LoadingOutlined } from "@ant-design/icons"
+import { LoadingOutlined } from "@ant-design/icons";
+import styles from "./styles.module.css";
 
-
-export const Spiner = () => {
-    return (
-        <div className={styles.spiner}><LoadingOutlined  /></div>
-    )
-}
+export const Spiner = () => (
+  <div className={styles.spiner}>
+    <LoadingOutlined />
+  </div>
+);

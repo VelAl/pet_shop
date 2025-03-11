@@ -1,8 +1,7 @@
 import gql from "graphql-tag";
 
-
 export const PET_RETURNED_SUBSC = gql`
-subscription {
+  subscription {
     petReturned {
       pet {
         id
@@ -13,4 +12,4 @@ subscription {
       late
     }
   }
-`
+`;
