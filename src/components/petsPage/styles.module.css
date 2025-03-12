@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: -5px 6px 12px 4px rgba(35, 113, 209, 0.74);
+  margin-bottom: 12px;
 }
 
 .flexItem {
@@ -35,4 +36,10 @@
 
 .startFilteringBtn :hover {
   font-size: xx-large;
+}
+
+.cardsHolder {
+  width: 100%;
+  max-height: calc(100vh - 145px);
+  overflow-y: scroll;
 }

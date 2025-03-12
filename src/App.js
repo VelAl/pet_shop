@@ -1,8 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import { Counter } from "./components/Counter";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
@@ -25,7 +22,7 @@ function App() {
   return (
     <AuthContext.Provider value={[isAuth, setIsAth]}>
       <Router>
-        <div className="App">
+        <div>
           <Header />
 
           <Switch>

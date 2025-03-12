@@ -49,10 +49,12 @@ export const PetsWhithFilters = ({ pets }) => {
           <SearchOutlined />
         </div>
       </div>
-
-      {filtredPets.map((pet) => (
-        <Pet key={pet.id} pet={pet} />
-      ))}
+      
+      <div className={styles.cardsHolder}>
+        {filtredPets.map((pet) => (
+          <Pet key={pet.id} pet={pet} />
+        ))}
+      </div>
     </>
   );
 };
